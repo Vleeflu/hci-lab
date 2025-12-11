@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JCI – Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Genos:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="home.html">JCI</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="products.html">Products</a>
+      <a href="forum.html">Forum</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Support & Partnerships</p>
+        <h1>We are here to help, 24/7</h1>
+        <p class="lede">Talk to our specialists for technical support, enterprise inquiries, or collaboration ideas. Pick a channel that fits you best.</p>
+        <div class="hero-chips">
+          <span class="chip">Live agents</span>
+          <span class="chip">Avg response &lt; 1 hour</span>
+          <span class="chip">Global coverage</span>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-glow"></div>
+        <h3>Need priority support?</h3>
+        <p>Get routed to our senior technicians for mission-critical operations and enterprise deployments.</p>
+        <a href="#contact-form" class="panel-btn">Request priority lane</a>
+      </div>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-card">
+        <div class="icon-circle">📞</div>
+        <h3>Phone Support</h3>
+        <p>Call us for urgent issues and live troubleshooting.</p>
+        <div class="meta">24/7 available</div>
+        <a href="" class="card-link">+62 21 8876 2201</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon-circle">💬</div>
+        <h3>Live Chat</h3>
+        <p>Instant messaging with our support crew from any device.</p>
+        <div class="meta">Avg reply &lt; 5 mins</div>
+        <a href="#" class="card-link">Start chat</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon-circle">✉️</div>
+        <h3>Email Support</h3>
+        <p>Share logs, videos, or specs for deeper diagnostics.</p>
+        <div class="meta">Response within 24h</div>
+        <a href="" class="card-link">support@jci.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon-circle">📍</div>
+        <h3>Visit Our Office</h3>
+        <p>Meet our team, see demos, and get hands-on assistance.</p>
+        <div class="meta">Weekdays 10.00 - 18.00</div>
+        <a href="" class="card-link">See directions</a>
+      </div>
+    </section>
+
+    <section class="contact-form-section" id="contact-form">
+      <div class="form-header">
+        <div>
+          <p class="eyebrow">Drop us a line</p>
+          <h2>Send us a message</h2>
+          <p class="lede">Tell us what you need. We will get back with an actionable answer, not an auto-reply.</p>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="form-row">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="+62 812-3456-7890" required>
+          </label>
+          <label>
+            Topic
+            <select name="topic" required>
+              <option value="">Select a topic</option>
+              <option value="support">Technical support</option>
+              <option value="sales">Sales & pricing</option>
+              <option value="partnership">Partnership</option>
+              <option value="warranty">Warranty & repair</option>
+            </select>
+          </label>
+        </div>
+        <label>
+          Message
+          <textarea name="message" rows="4" placeholder="Describe your request"></textarea>
+        </label>
+        <div class="form-actions">
+          <label class="checkbox">
+            <input type="checkbox" name="priority">
+            <span>Request priority handling</span>
+          </label>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-header">
+        <p class="eyebrow">FAQ</p>
+        <h2>Quick answers</h2>
+        <p class="lede">Before reaching out, you might find what you need here.</p>
+      </div>
+      <div class="faq-grid">
+        <details open>
+          <summary>How fast can I get technical support?</summary>
+          <p>Live chat replies in minutes. Phone is immediate. Email is handled within 24 hours.</p>
+        </details>
+        <details>
+          <summary>Do you provide onsite visits?</summary>
+          <p>Yes, for enterprise deployments. Share your location and scope, and we will schedule a field engineer.</p>
+        </details>
+        <details>
+          <summary>How do I book a repair?</summary>
+          <p>Submit the form with your serial number. We will arrange pickup or direct you to the nearest service hub.</p>
+        </details>
+        <details>
+          <summary>Can I talk to sales for bulk orders?</summary>
+          <p>Choose Sales & pricing in the topic list. Our sales team will respond with tailored options and SLAs.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div>
+        <p class="eyebrow">Need it now?</p>
+        <h2>Call our rapid response line</h2>
+        <p class="lede">Mission critical flight? We have engineers on standby to keep you airborne.</p>
+      </div>
+      <a class="cta-btn" href="">Call +62 21 8876 2201</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h1>JCI</h1>
+        <p>Empowering creators, professionals, and innovators worldwide to capture perspectives that inspire change and tell stories that truly matter</p>
+      </div>
+      <div class="footer-products">
+        <h4>Products</h4>
+        <a href="#">Sky Vision X7</a>
+        <a href="#">Sky Eagle M1</a>
+        <a href="#">Raptor K7</a>
+        <a href="#">Falcon Z2</a>
+        <a href="#">Storm Lite</a>
+        <a href="#">Aerial Pro</a>
+      </div>
+      <div class="footer-other">
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Warranty</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Downloads</a>
+      </div>
+      <div class="footer-other">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Careers</a>
+        <a href="#">Partners</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 JCI. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies</span>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>

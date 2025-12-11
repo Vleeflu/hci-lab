@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JCI – Community Forum</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Genos:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/forum.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="home.html">JCI</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="products.html">Products</a>
+      <a href="forum.html">Forum</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <main class="forum-page">
+    <section class="forum-hero">
+      <div class="hero-content">
+        <h1>Community Forum</h1>
+        <p>Discover insights from verified members and company experts</p>
+        <button class="btn-create-post">+ New Post</button>
+      </div>
+      <div class="hero-backdrop"></div>
+    </section>
+
+    <section class="forum-content">
+      <div class="forum-controls">
+        <h2>Filter by Category</h2>
+        <div class="controls-wrapper">
+          <div class="category-pills">
+            <button class="pill-btn active" data-category="all">All Posts</button>
+            <button class="pill-btn" data-category="hot">🔥 Hot Topics</button>
+            <button class="pill-btn" data-category="photography">📷 Photography</button>
+            <button class="pill-btn" data-category="videography">📹 Videography</button>
+            <button class="pill-btn" data-category="community">👥 Community</button>
+          </div>
+          <div class="sort-dropdown">
+            <select id="sort-by">
+              <option value="recent">Sort: Recent</option>
+              <option value="popular">Popular</option>
+              <option value="trending">Trending</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="posts-container">
+        <div class="posts-list">
+          <article class="post-card">
+            <div class="post-header">
+              <div class="author-section">
+                <div class="author-avatar">🎯</div>
+                <div class="author-info">
+                  <h3 class="author-name">@dronemaster_pro</h3>
+                  <span class="author-badge">✓ Verified</span>
+                </div>
+              </div>
+              <span class="post-time">3h ago</span>
+            </div>
+            
+            <div class="post-content">
+              <h2 class="post-title">Best configuration for cinematic shots with Sky Vision X7</h2>
+              <p class="post-desc">I'm planning to shoot a short film next weekend and need advice on optimal camera settings for the Sky Vision X7. Any recommendations for configurations on achieving that professional cinematic look? I've been researching different presets and want to make sure I get the best results.</p>
+            </div>
+
+            <div class="post-stats">
+              <div class="stat-item">
+                <span class="stat-icon">👁</span>
+                <span class="stat-value">7.8K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">❤️</span>
+                <span class="stat-value">5.0K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">💬</span>
+                <span class="stat-value">281</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">↗️</span>
+                <span class="stat-value">642</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-header">
+              <div class="author-section">
+                <div class="author-avatar">📷</div>
+                <div class="author-info">
+                  <h3 class="author-name">@photography_guru</h3>
+                  <span class="author-badge">✓ Expert</span>
+                </div>
+              </div>
+              <span class="post-time">5h ago</span>
+            </div>
+            
+            <div class="post-content">
+              <h2 class="post-title">Incredible landscape shots captured with Raptor K7 during sunset</h2>
+              <p class="post-desc">Just finished an amazing shoot with the Raptor K7 during golden hour. The stabilization is absolutely incredible - managed to capture buttery smooth aerial footage even in moderate wind conditions. Here are some tips from my experience...</p>
+            </div>
+
+            <div class="post-stats">
+              <div class="stat-item">
+                <span class="stat-icon">👁</span>
+                <span class="stat-value">12.5K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">❤️</span>
+                <span class="stat-value">8.2K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">💬</span>
+                <span class="stat-value">456</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">↗️</span>
+                <span class="stat-value">1.2K</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-header">
+              <div class="author-section">
+                <div class="author-avatar">🚁</div>
+                <div class="author-info">
+                  <h3 class="author-name">@jci_official</h3>
+                  <span class="author-badge">✓ Company</span>
+                </div>
+              </div>
+              <span class="post-time">8h ago</span>
+            </div>
+            
+            <div class="post-content">
+              <h2 class="post-title">Announcing Sky Vision X7 Pro: Enhanced Features and Performance</h2>
+              <p class="post-desc">We're thrilled to announce the launch of Sky Vision X7 Pro with advanced features including improved battery life, enhanced 4K capabilities, and AI-powered flight optimization. Join our webinar tomorrow to learn more about what's new!</p>
+            </div>
+
+            <div class="post-stats">
+              <div class="stat-item">
+                <span class="stat-icon">👁</span>
+                <span class="stat-value">24.3K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">❤️</span>
+                <span class="stat-value">15.6K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">💬</span>
+                <span class="stat-value">789</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">↗️</span>
+                <span class="stat-value">3.4K</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-header">
+              <div class="author-section">
+                <div class="author-avatar">🎬</div>
+                <div class="author-info">
+                  <h3 class="author-name">@videographer_elite</h3>
+                  <span class="author-badge">✓ Verified</span>
+                </div>
+              </div>
+              <span class="post-time">12h ago</span>
+            </div>
+            
+            <div class="post-content">
+              <h2 class="post-title">Tips for smooth 4K video transitions and color grading</h2>
+              <p class="post-desc">After months of experimentation, I've discovered some amazing techniques for achieving smooth transitions between 4K footage. The key is understanding how your drone's frame rate interacts with your editing software...</p>
+            </div>
+
+            <div class="post-stats">
+              <div class="stat-item">
+                <span class="stat-icon">👁</span>
+                <span class="stat-value">9.1K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">❤️</span>
+                <span class="stat-value">6.8K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">💬</span>
+                <span class="stat-value">323</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">↗️</span>
+                <span class="stat-value">876</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-card">
+            <div class="post-header">
+              <div class="author-section">
+                <div class="author-avatar">👥</div>
+                <div class="author-info">
+                  <h3 class="author-name">@community_helper</h3>
+                  <span class="author-badge">✓ Moderator</span>
+                </div>
+              </div>
+              <span class="post-time">1d ago</span>
+            </div>
+            
+            <div class="post-content">
+              <h2 class="post-title">Monthly Community Challenge: Sunrise Photography</h2>
+              <p class="post-desc">This month's challenge is all about capturing stunning sunrise footage! Share your best dawn shots taken with any JCI drone. The winner gets featured in our newsletter and wins exclusive merchandise. Submit your entries by end of month!</p>
+            </div>
+
+            <div class="post-stats">
+              <div class="stat-item">
+                <span class="stat-icon">👁</span>
+                <span class="stat-value">18.9K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">❤️</span>
+                <span class="stat-value">12.4K</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">💬</span>
+                <span class="stat-value">542</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">↗️</span>
+                <span class="stat-value">2.1K</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn">←</button>
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">...</button>
+          <button class="page-btn">12</button>
+          <button class="page-btn">→</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h1>JCI</h1>
+        <p>Empowering creators, professionals, and innovators worldwide to capture perspectives that inspire change and tell stories that truly matter</p>
+      </div>
+      <div class="footer-products">
+        <h4>Products</h4>
+        <a href="#">Sky Vision X7</a>
+        <a href="#">Sky Eagle M1</a>
+        <a href="#">Raptor K7</a>
+        <a href="#">Falcon Z2</a>
+        <a href="#">Storm Lite</a>
+        <a href="#">Aerial Pro</a>
+      </div>
+      <div class="footer-other">
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Warranty</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Downloads</a>
+      </div>
+      <div class="footer-other">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Careers</a>
+        <a href="#">Partners</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 JCI. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies</span>
+    </div>
+  </footer>
+
+  <script src="js/forum.js"></script>
+</body>
+</html>

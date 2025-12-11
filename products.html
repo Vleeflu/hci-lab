@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JCI – Products</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Genos:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css?">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+        <a href="home.html">JCI</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="products.html">Products</a>
+      <a href="forum.html">Forum</a>
+      <a href="store.html">Store</a>
+      <a href="contact.html">Contact</a>
+      <a href="home.html" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <main class="product-page">
+    <section class="products-hero">
+      <h1>Top 5 Drone Highlights</h1>
+      <p>Our most advanced and popular drones</p>
+    </section>
+
+    <section class="products-filter">
+      <div class="filter-label">Filter by type:</div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Drones</button>
+        <button class="filter-btn" data-filter="flagship">Flagship Model</button>
+        <button class="filter-btn" data-filter="high-performance">High Performance</button>
+        <button class="filter-btn" data-filter="brother">Brother Model</button>
+        <button class="filter-btn" data-filter="agility">Agility Control</button>
+      </div>
+    </section>
+
+    <section class="products-list">
+      <article class="product-card" data-category="flagship high-performance">
+        <div class="product-image">
+          <img src="img/1.jpg" alt="Sky Vision X7">
+        </div>
+        <div class="product-content">
+          <div class="product-tags">
+            <span class="tag-primary">Flagship Model</span>
+            <span class="tag-secondary">High Performance</span>
+          </div>
+          <h2>Sky Vision X7</h2>
+          <p class="product-desc">
+            The Sky Vision X7 is a next-generation professional drone engineered to deliver unmatched aerial performance and cinematic precision. Designed for filmmakers, surveyors, content creators, and industry specialists, the X7 combines cutting-edge imaging technology with intelligent flight systems to capture the world with extraordinary clarity!
+          </p>
+          <ul class="product-specs">
+            <li>1440 × 1080 resolution</li>
+            <li>20 km/h flight speed</li>
+            <li>Optical image stabilization</li>
+          </ul>
+          <a href="store.html" class="btn-primary">View in Store</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="brother">
+        <div class="product-image">
+          <img src="img/2.jpeg" alt="Sky Eagle M1">
+        </div>
+        <div class="product-content">
+          <div class="product-tags">
+            <span class="tag-secondary">Brother Model</span>
+          </div>
+          <h2>Sky Eagle M1</h2>
+          <p class="product-desc">
+            The Sky Eagle M1 is a highly stable and reliable drone optimized for aerial surveys, precision mapping, and smooth tracking shots in dynamic environments. Built for professionals and enthusiasts alike, this drone delivers exceptional stability, intuitive controls, and advanced features that make complex aerial tasks remarkably simple and accessible!
+          </p>
+          <ul class="product-specs">
+            <li>4K ultra HD camera</li>
+            <li>Advanced wind resistance</li>
+            <li>Smart return-to-home</li>
+          </ul>
+          <a href="store.html" class="btn-primary">View in Store</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="high-performance">
+        <div class="product-image">
+          <img src="img/3.png" alt="Raptor K7">
+        </div>
+        <div class="product-content">
+          <div class="product-tags">
+            <span class="tag-secondary">High Performance</span>
+          </div>
+          <h2>Raptor K7</h2>
+          <p class="product-desc">
+            The Raptor K7 is a high-speed, high-precision drone engineered for fast-action scenarios, extreme sports coverage, and advanced tracking with exceptional agility and maneuverability. Equipped with responsive controls and cutting-edge sensor technology, the K7 pushes the boundaries of what's possible in aerial cinematography and performance!
+          </p>
+          <ul class="product-specs">
+            <li>Sport flight mode</li>
+            <li>Long-range control</li>
+            <li>Multi-directional sensors</li>
+          </ul>
+          <a href="store.html" class="btn-primary">View in Store</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="agility">
+        <div class="product-image">
+          <img src="img/4.jpg" alt="Creator L & Creator XL">
+        </div>
+        <div class="product-content">
+          <div class="product-tags">
+            <span class="tag-secondary">Agility Control</span>
+          </div>
+          <h2>Creator L and Creator XL</h2>
+          <p class="product-desc">
+            The Creator series features dual creator-focused models built for maximum flexibility, extended flight time, and precise control in any scenario. With customizable payload options, intelligent battery management, and multiple flight presets, these drones empower creators to focus on storytelling rather than technical complexity!
+          </p>
+          <ul class="product-specs">
+            <li>Flexible payload options</li>
+            <li>Long battery life</li>
+            <li>Multiple flight presets</li>
+          </ul>
+          <a href="store.html" class="btn-primary">View in Store</a>
+        </div>
+      </article>
+
+      <article class="product-card" data-category="flagship">
+        <div class="product-image">
+          <img src="img/5.jpg" alt="Dialga Super GX">
+        </div>
+        <div class="product-content">
+          <div class="product-tags">
+            <span class="tag-primary">Flagship Model</span>
+          </div>
+          <h2>Dialga Super GX</h2>
+          <p class="product-desc">
+            Dialga Super GX is our pinnacle flagship platform, blending extreme flight stability, premium imaging, and intelligent autonomy for demanding professional missions. From cinematic shoots to industrial inspections, Dialga delivers crystal-clear visuals, resilient performance in harsh conditions, and smart safety features so pilots can stay focused on the mission with total confidence!
+          </p>
+          <ul class="product-specs">
+            <li>1640 x 1080 resolution</li>
+            <li>20 Kilometers per hour</li>
+            <li>Optical Image Stabilization</li>
+          </ul>
+          <a href="store.html" class="btn-primary">View in Store</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="products-cta">
+      <h2>Need detailed specifactions?</h2>
+      <p>Compare features or ask some help to our customer support or visit out community forums.</p>
+      <div class="cta-buttons">
+        <button class="btn-primary">Compare Features</button>
+        <button class="btn-primary">Customer Support</button>
+        <button class="btn-primary">Community Forum</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <h1>JCI</h1>
+        <p>Empowering creators, professionals, and innovators worldwide to capture perspectives that inspire change and tell stories that truly matter</p>
+      </div>
+      <div class="footer-products">
+        <h4>Products</h4>
+        <a href="#">Sky Vision X7</a>
+        <a href="#">Sky Eagle M1</a>
+        <a href="#">Raptor K7</a>
+        <a href="#">Falcon Z2</a>
+        <a href="#">Storm Lite</a>
+        <a href="#">Aerial Pro</a>
+      </div>
+      <div class="footer-other">
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Warranty</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Downloads</a>
+      </div>
+      <div class="footer-other">
+        <h4>Company</h4>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Carrers</a>
+        <a href="#">Partners</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 JCI. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies</span>
+    </div>
+  </footer>
+
+  <script src="js/product.js"></script>
+</body>
+</html>
