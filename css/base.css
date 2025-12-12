@@ -27,11 +27,12 @@ body {
   padding: 0;
   padding-top: calc(var(--nav-height) + env(safe-area-inset-top));
   font-family: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
-  background: radial-gradient(circle at 18% 20%, rgba(77, 208, 255, 0.16), transparent 28%),
-    radial-gradient(circle at 82% 10%, rgba(255, 45, 45, 0.18), transparent 30%),
+  background: radial-gradient(circle at 18% 20%, #4dd0ff29, transparent 28%),
+    radial-gradient(circle at 82% 10%, #ff2d2d2e, transparent 30%),
     linear-gradient(145deg, #05070b 0%, #0a1018 50%, #080c13 100%);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -46,4 +47,20 @@ iframe {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Ensure all major containers are fluid */
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent hardcoded sizes from breaking layout */
+@supports (width: clamp(1px, 1%, 100%)) {
+  /* Modern browsers will use this - already using clamp in most places */
 }

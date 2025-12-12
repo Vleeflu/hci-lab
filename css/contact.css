@@ -6,6 +6,7 @@
   width: min(1200px, 94vw);
   margin: 0 auto 40px;
   padding: 56px 0 20px;
+  overflow: hidden;
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 26px;
@@ -16,8 +17,6 @@
   content: "";
   position: absolute;
   inset: -14% -8% -8% -10%;
-  background: radial-gradient(circle at 30% 20%, rgba(77, 208, 255, 0.18), transparent 40%),
-    radial-gradient(circle at 80% 60%, rgba(255, 45, 45, 0.16), transparent 40%);
   filter: blur(10px);
   pointer-events: none;
   z-index: 0;
@@ -410,6 +409,47 @@ details p {
 .cta-btn:hover {
   transform: translateY(-2px);
   border-color: rgba(255, 255, 255, 0.26);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-hero {
+    padding: 60px 0 44px;
+  }
+
+  .contact-hero h1 {
+    font-size: 36px;
+  }
+
+  .contact-hero p {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    max-width: 600px;
+  }
+
+  .form-row {
+    gap: 16px;
+  }
+
+  .form-input,
+  .form-textarea {
+    font-size: 15px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-info-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .info-block {
+    gap: 12px;
+  }
 }
 
 @media screen and (max-width: 768px) {

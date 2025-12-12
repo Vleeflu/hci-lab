@@ -75,6 +75,26 @@
   color: #fff !important;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 0 calc(20px + env(safe-area-inset-right)) 0 calc(20px + env(safe-area-inset-left));
+  }
+
+  .logo {
+    font-size: 34px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .btn-login {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --nav-height: 70px;

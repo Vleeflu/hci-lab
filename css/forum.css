@@ -1,16 +1,17 @@
 .forum-page {
   color: var(--text);
   background: var(--bg);
+  overflow-x: hidden;
 }
 
 .forum-hero {
   position: relative;
   overflow: hidden;
-  min-height: 320px;
+  min-height: clamp(280px, 50vh, 320px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 20px;
+  padding: clamp(40px, 8vw, 60px) clamp(12px, 5vw, 20px);
 }
 
 .hero-backdrop {
@@ -28,9 +29,9 @@
   position: absolute;
   top: -50%;
   right: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(255, 45, 45, 0.1), transparent);
+  width: clamp(300px, 60vw, 500px);
+  height: clamp(300px, 60vw, 500px);
+  background: radial-gradient(circle, #ff2e2e1a, transparent);
   filter: blur(40px);
   z-index: 1;
   pointer-events: none;
@@ -41,8 +42,8 @@
   position: absolute;
   bottom: -30%;
   left: -5%;
-  width: 400px;
-  height: 400px;
+  width: clamp(250px, 50vw, 400px);
+  height: clamp(250px, 50vw, 400px);
   background: radial-gradient(circle, rgba(77, 208, 255, 0.08), transparent);
   filter: blur(40px);
   z-index: 1;
@@ -380,6 +381,55 @@
   color: #0a0d14;
   border-color: transparent;
   box-shadow: 0 8px 20px rgba(255, 45, 45, 0.3);
+}
+
+@media screen and (max-width: 1024px) {
+  .forum-hero {
+    min-height: 280px;
+    padding: 48px 0 32px;
+  }
+
+  .forum-hero h1 {
+    font-size: 32px;
+  }
+
+  .forum-hero p {
+    font-size: 15px;
+  }
+
+  .btn-create-post {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .forum-content {
+    padding: 48px 0 54px;
+  }
+
+  .forum-controls h2 {
+    font-size: 20px;
+  }
+
+  .category-pills {
+    gap: 10px;
+  }
+
+  .pill-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .posts-list {
+    gap: 14px;
+  }
+
+  .post-card {
+    padding: 18px;
+  }
+
+  .post-title {
+    font-size: 17px;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -6,6 +6,7 @@
   width: min(1200px, 94vw);
   margin: 0 auto;
   padding: 64px 0 48px;
+  overflow: hidden;
   text-align: center;
   position: relative;
 }
@@ -39,9 +40,9 @@
 
 .stores-container {
   width: 100%;
-  max-width: 1400px;
+  max-width: clamp(320px, 95vw, 1400px);
   margin: 0 auto 70px;
-  padding: 0 60px;
+  padding: 0 clamp(12px, 5vw, 60px);
   position: relative;
 }
 
@@ -53,6 +54,7 @@
   padding: 20px 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .stores-scroll-wrapper::-webkit-scrollbar {
@@ -61,7 +63,7 @@
 
 .store-card {
   min-width: calc(100% - 10px);
-  max-width: 880px;
+  max-width: clamp(300px, 90vw, 880px);
   flex-shrink: 0;
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
@@ -83,7 +85,7 @@
   position: relative;
   background: #0c1018;
   overflow: hidden;
-  min-height: 320px;
+  min-height: clamp(250px, 40vw, 320px);
 }
 
 .store-image img {
@@ -457,12 +459,12 @@
 
 .feature-blob {
   position: absolute;
-  width: 240px;
-  height: 240px;
+  width: clamp(150px, 30vw, 240px);
+  height: clamp(150px, 30vw, 240px);
   background: radial-gradient(circle, rgba(77, 208, 255, 0.24), transparent 60%);
   filter: blur(12px);
-  right: -40px;
-  bottom: -60px;
+  right: clamp(-20px, -5vw, -40px);
+  bottom: clamp(-30px, -8vw, -60px);
   z-index: 0;
   pointer-events: none;
 }
@@ -569,6 +571,50 @@
 .arrow {
   font-size: 18px;
   color: var(--text);
+}
+
+@media screen and (max-width: 1024px) {
+  .store-hero {
+    padding: 56px 0 40px;
+  }
+
+  .store-hero h1 {
+    font-size: 36px;
+  }
+
+  .store-hero p {
+    font-size: 16px;
+  }
+
+  .stores-container {
+    padding: 0 40px;
+  }
+
+  .store-card {
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+  }
+
+  .store-image {
+    min-width: 250px;
+    min-height: 280px;
+  }
+
+  .online-layout {
+    gap: 20px;
+  }
+
+  .online-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .download-app {
+    padding: 40px 24px;
+  }
+
+  .app-text h2 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 768px) {
